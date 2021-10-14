@@ -1,0 +1,10 @@
+<h1>Delete Teacher</h1>
+
+<p>Are you suer to delete {{remove}}?</p>
+
+<form method="POST">
+	{% csrf_token %}
+	<a href="{% url 'index' %}">Cancel</a>
+	<input type="submit" value="yes">
+	
+</form>
